@@ -1,24 +1,11 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from 'react'
 
-class Authors extends Component {
-
+export class Authors extends Component {
   render() {
-
-    let authors = this.props.authors.map(author => <li key={author.id}>{author.authorName}</li>);
-
     return (
-      <div>
-        <ul>
-          {authors}
-        </ul>
-      </div>
-    );
+      <div>Authors</div>
+    )
   }
-};
-
-const mapStateToProps = state => {
-  return { authors: state.auth.authors }
 }
 
-export default connect(mapStateToProps)(Authors);
+export default Authors
