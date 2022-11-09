@@ -96,8 +96,8 @@ export default function bookApp(
 }
 ```
 
-This is the current set up in `src/reducers/manageAuthorsAndBooks.js`, and it
-works. You can see, however, by working with just two resources, the size of our
+You should set this up in `src/reducers/manageAuthorsAndBooks.js`, and it will
+work. You will see, however, by working with just two resources, the size of our
 reducer increased significantly. Moreover, by placing each resource in the same
 reducer, we are coupling these resources together, where we would prefer to
 maintain their separation. By creating separate reducers for each resource in an
